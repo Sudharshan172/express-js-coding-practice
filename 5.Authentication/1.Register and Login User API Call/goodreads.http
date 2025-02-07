@@ -1,0 +1,22 @@
+//Register User API CALL
+POST http://localhost:3000/users/
+Content-Type:application/json
+
+{
+    "username":"sudharshan123",
+    "name":"Sudharshan",
+    "password":"test@123",
+    "gender":"male",
+    "location":"kadapa"
+}
+###
+
+//Login User API CALL
+POST http://localhost:3000/login/
+Content-Type:application/json
+
+{
+    "username":"sudharshan123",
+    "password":"test@123"
+}
+###

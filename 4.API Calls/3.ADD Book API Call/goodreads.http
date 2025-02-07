@@ -1,0 +1,17 @@
+//ADD BOOK API CALL
+POST http://localhost:3000/books/
+Content-Type: application/json
+
+{
+    "title":"I Am Malala",
+    "author_id":3,
+    "rating":4.48,
+    "rating_count":746819,
+    "review_count":1112,
+    "description":"Autobiography of Malala Yousafzai",
+    "pages":309,
+    "date_of_publication":"November 1st 2006",
+    "edition_language":"Hindi",
+    "price":250,
+    "online_stores":"Amazon, Audible,Google play, Indigo,Abebooks"
+}
