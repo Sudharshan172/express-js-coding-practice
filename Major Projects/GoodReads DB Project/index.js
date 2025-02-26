@@ -147,10 +147,7 @@ app.delete("/books/:bookId/", authenticateToken, async (request, response) => {
 });
 
 //GET Author Books API Call
-app.get(
-  "/authors/:authorId/books/",
-  authenticateToken,
-  async (request, response) => {
+app.get("/authors/:authorId/books/", authenticateToken, async (request, response) => {
     const { authorId } = request.params;
     const getAuthorBooksQuery = `select *from book where author_id=${authorId};`;
     const booksArray = await db.all(getAuthorBooksQuery);
